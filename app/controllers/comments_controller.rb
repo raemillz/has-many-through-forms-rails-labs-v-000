@@ -11,7 +11,11 @@ class CommentsController < ApplicationController
 
   def new
   	@comment = Comment.new
-  end 	
+  end
+
+  def index
+    @comments = Comment.all
+  end
 
   private
 
