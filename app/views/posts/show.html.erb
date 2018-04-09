@@ -1,4 +1,4 @@
 <%= @post.comments.each do |comment| %>
   <%= comment.user.username %>
-  <%= href: user_path(@user) %>
+  <%= link_to post_path(@post) %>
 <%end%>
